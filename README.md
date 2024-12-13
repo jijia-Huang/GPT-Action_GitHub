@@ -1,18 +1,25 @@
 # GPT-Action_GitHub
- GPT Action 套件，用來存取Github 帳號資訊與GPT溝通
+GPT Action 套件，用來存取 GitHub 帳號資訊並與 GPT 溝通。
 
-# 1. AccessToken.txt 放 github pat
+## 使用步驟
 
-# 2. 執行 CryptInfo.exe
+1. **AccessToken.txt** 放置您的 GitHub Personal Access Token (PAT)。
 
-# 3. 上傳 timestamp_encrypted.txt、token_encrypted.txt 到
-https://chatgpt.com/g/g-67443202ba008191907ad716deed32a3-github-xiao-zhu-shou
+2. 執行 **CryptInfo.exe**，生成加密的 timestamp 和 token。
 
-# 4. 開始問問題
-## getRepoName: 用來取得使用者帳戶中可看見的儲存庫名稱，如果得到error的話，請告知使用者
-## searchRepo:利用關鍵字搜尋repo名稱
-## getUserInfo:用來取得使用者資訊，GPTs可以用這些資訊了解使用者是誰
-## getRepoDescription :使用此指令時，需先向使用者請求倉庫名稱，並依名稱進行查詢，將得到的結果轉告使用者
-## getCommit: 請使用者提供commit 的倉庫以及sha碼，進行查詢，將得到的結果轉告使用者
-## getLatestCommit:請使用者提供想要檢視的倉庫名稱(必須)、分支(可選)、最近幾次的commit(可選)
-## getUserCommit:請使用者提供想要檢視的用戶名稱(必須)、最近幾次的commit(可選)、想要觀察的倉庫名稱(可選)、想要觀察的組織名稱(可選)
+3. 上傳 `timestamp_encrypted.txt` 和 `token_encrypted.txt` 到以下鏈接：[GitHub 小助手](https://chatgpt.com/g/g-67443202ba008191907ad716deed32a3-github-xiao-zhu-shou)
+
+4. 開始詢問問題。
+
+## 可用指令
+
+| 指令               | 描述                                                         |
+|--------------------|--------------------------------------------------------------|
+| `getRepoName`       | 用來取得使用者帳戶中可見的儲存庫名稱。如果遇到錯誤，會提示使用者。 |
+| `searchRepo`        | 利用關鍵字搜尋儲存庫名稱。                                    |
+| `getUserInfo`       | 用來取得使用者的基本資訊，幫助 GPT 知道該如何稱呼使用者。     |
+| `getRepoDescription`| 根據指定的儲存庫名稱查詢該儲存庫的描述。                     |
+| `getCommit`         | 請使用者提供儲存庫名稱和提交的 SHA 值，進行提交紀錄查詢。     |
+| `getLatestCommit`   | 請提供儲存庫名稱（必須）、分支名稱（可選）、以及想查看的最新提交數量（可選）。 |
+| `getUserCommit`     | 請提供使用者名稱（必須）、最新提交數量（可選）、儲存庫名稱（可選）、或組織名稱（可選）來查詢該用戶的提交紀錄。 |
+
