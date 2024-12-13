@@ -8,8 +8,10 @@ GPT Action 套件，用來存取 GitHub 帳號資訊並與 GPT 溝通。
 2. 執行 **CryptInfo.exe**，生成加密的 timestamp 和 token。
 
 3. 上傳 `timestamp_encrypted.txt` 和 `token_encrypted.txt` 到以下鏈接：[GitHub 小助手](https://chatgpt.com/g/g-67443202ba008191907ad716deed32a3-github-xiao-zhu-shou)
+  
+4. 每過30分鐘後認證過期需重新執行**CryptInfo.exe**
 
-4. 開始詢問問題。
+5. 開始詢問問題。
 
 ## 可用指令
 
